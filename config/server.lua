@@ -115,8 +115,8 @@ return {
 
     characters = {
         playersNumberOfCharacters = { -- Define maximum amount of player characters by rockstar license (you can find this license in your server's database in the player table)
-            ['license:2a4e5fa84d9cc2f27882dfc6631422882d7ba224'] = 10,
-            ['license:fc1ffc22f34472b411e0f82d31597316e2abbd94'] = 10,
+            ['license:DONOTPUBLISH'] = 10,
+            ['license:DONOTPUBLISH'] = 10,
         },
 
         defaultNumberOfCharacters = 3, -- Define maximum amount of default characters (maximum 3 characters defined by default)
