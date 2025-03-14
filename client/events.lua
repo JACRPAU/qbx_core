@@ -18,6 +18,50 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     if motd ~= '' then
         exports.chat:addMessage({ template = motd })
     end
+
+    RequestModel(`lev_apartment_shell`)
+	while not HasModelLoaded(`lev_apartment_shell`) do
+		Wait(3)
+	end
+
+    RequestModel(`ep_planter_large`)
+	while not HasModelLoaded(`ep_planter_large`) do
+		Wait(3)
+	end
+--[[ PEDS  
+                "pw_bobby",
+                "pw_cesar",
+                "pw_andreas",
+                "pw_roscoe",
+                "u_m_m_yeti",
+                "pw_jester",
+                "pw_ortega",
+]]
+    RequestModel(`pw_bobby`)
+	while not HasModelLoaded(`pw_bobby`) do
+		Wait(3)
+	end
+    RequestModel(`pw_cesar`)
+	while not HasModelLoaded(`pw_cesar`) do
+		Wait(3)
+	end
+    RequestModel(`pw_andreas`)
+	while not HasModelLoaded(`pw_andreas`) do
+		Wait(3)
+	end
+    RequestModel(`pw_roscoe`)
+	while not HasModelLoaded(`pw_roscoe`) do
+		Wait(3)
+	end
+    RequestModel(`pw_jester`)
+	while not HasModelLoaded(`pw_jester`) do
+		Wait(3)
+	end
+    RequestModel(`pw_ortega`)
+	while not HasModelLoaded(`pw_ortega`) do
+		Wait(3)
+	end
+
 end)
 
 ---@param val PlayerData
@@ -55,7 +99,7 @@ end)
 ---@param h number
 RegisterNetEvent('QBCore:Command:TeleportToCoords', function(x, y, z, h)
     if GetInvokingResource() then return end
-    
+
     SetPedCoordsKeepVehicle(cache.ped, x, y, z)
     SetEntityHeading(cache.ped, h or GetEntityHeading(cache.ped))
 end)

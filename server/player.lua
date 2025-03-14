@@ -592,6 +592,11 @@ function CheckPlayerData(source, playerData)
         playerData.money[moneytype] = playerData.money[moneytype] or startamount
     end
 
+    local lbNumber = exports["lb-phone"]:GetEquippedPhoneNumber(Offline and playerData.citizenid or source)
+    if not Offline and not lbNumber then
+        lbNumber = exports["lb-phone"]:GetEquippedPhoneNumber(playerData.citizenid)
+    end    
+
     -- Charinfo
     playerData.charinfo = playerData.charinfo or {}
     playerData.charinfo.firstname = playerData.charinfo.firstname or 'Firstname'
@@ -600,7 +605,7 @@ function CheckPlayerData(source, playerData)
     playerData.charinfo.gender = playerData.charinfo.gender or 0
     playerData.charinfo.backstory = playerData.charinfo.backstory or 'placeholder backstory'
     playerData.charinfo.nationality = playerData.charinfo.nationality or 'USA'
-    playerData.charinfo.phone = playerData.charinfo.phone or GenerateUniqueIdentifier('PhoneNumber')
+    playerData.charinfo.phone = lbNumber or playerData.charinfo.phone
     playerData.charinfo.account = playerData.charinfo.account or GenerateUniqueIdentifier('AccountNumber')
     playerData.charinfo.cid = playerData.charinfo.cid or playerData.cid
     -- Metadata
@@ -645,6 +650,11 @@ function CheckPlayerData(source, playerData)
         id = true,
         driver = true,
         weapon = false,
+        swat = false,
+        hunting = false,
+        fishing = false,
+        trucker = false,
+        salvage = false,
     }
     playerData.metadata.inside = playerData.metadata.inside or {
         house = nil,
@@ -1235,9 +1245,9 @@ local function emitMoneyEvents(source, playerMoney, moneyType, amount, actionTyp
     TriggerClientEvent('QBCore:Client:OnMoneyChange', source, moneyType, amount, actionType, reason)
     TriggerEvent('QBCore:Server:OnMoneyChange', source, moneyType, amount, actionType, reason)
 
-    if moneyType == 'bank' and isRemove then
-        TriggerClientEvent('qb-phone:client:RemoveBankMoney', source, amount)
-    end
+    --[[if moneyType == 'bank' and actionType == 'remove' then
+    --    TriggerClientEvent('qb-phone:client:RemoveBankMoney', source, amount)
+    end]]--
 
     local oxMoneyType = moneyType == 'cash' and 'money' or moneyType
 

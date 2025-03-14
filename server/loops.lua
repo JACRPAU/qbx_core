@@ -40,8 +40,20 @@ local function pay(player)
         Notify(player.PlayerData.source, locale('error.company_too_poor'), 'error')
         return
     end
-    config.removeSocietyMoney(job.name, payment)
-    config.sendPaycheck(player, payment)
+    config.removeSocietyMoney(job.name, payment, 'Wage Payment', player.PlayerData.charinfo.firstname .. ' ' .. player.PlayerData.charinfo.lastname)
+    --exports['Renewed-Banking']:handleTransaction(job.name, 'Payroll', payment, 'Wage Payment', player.PlayerData.charinfo.firstname .. ' ' .. player.PlayerData.charinfo.lastname, job.label, 'withdraw')
+    config.sendPaycheck(player, payment, job.label .. '<!>' .. job.grade.name .. ' wage payment')
+    --exports['Renewed-Banking']:handleTransaction(player.PlayerData.citizenid, 'Payroll', payment, 'Wage Payment for ' .. job.grade.name, player.PlayerData.charinfo.firstname .. ' ' .. player.PlayerData.charinfo.lastname, job.label, 'deposit')
+
+
+    
+    exports["lb-phone"]:SendNotification(player.PlayerData.source, {
+        app = "Wallet", -- the app to send the notification to (optional)
+        title = job.label .. " Payroll Dept", -- the title of the notification
+        content = "Payroll deposited at the bank: $".. payment .. ' for ' ..job.grade.name, -- the description of the notification
+        icon = "./img/icons/apps/Wallet.jpg", -- the icon of the notification (optional)
+    })
+
 end
 
 CreateThread(function()

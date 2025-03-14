@@ -331,65 +331,6 @@ lib.addCommand('setgang', {
     assert(success, json.encode(errorResult))
 end)
 
-lib.addCommand('ooc', {
-    help = locale('command.ooc.help')
-}, function(source, args)
-    local message = table.concat(args, ' ')
-    local players = GetPlayers()
-    local player = GetPlayer(source)
-    if not player then return end
-
-    local playerCoords = GetEntityCoords(GetPlayerPed(source))
-    for _, v in pairs(players) do
-        if v == source then
-            exports.chat:addMessage(v --[[@as Source]], {
-                color = { 0, 0, 255},
-                multiline = true,
-                args = {('OOC | %s'):format(GetPlayerName(source)), message}
-            })
-        elseif #(playerCoords - GetEntityCoords(GetPlayerPed(v))) < 20.0 then
-            exports.chat:addMessage(v --[[@as Source]], {
-                color = { 0, 0, 255},
-                multiline = true,
-                args = {('OOC | %s'):format(GetPlayerName(source)), message}
-            })
-        elseif IsPlayerAceAllowed(v --[[@as string]], 'admin') then
-            if IsOptin(v --[[@as Source]]) then
-                exports.chat:addMessage(v--[[@as Source]], {
-                    color = { 0, 0, 255},
-                    multiline = true,
-                    args = {('Proximity OOC | %s'):format(GetPlayerName(source)), message}
-                })
-                logger.log({
-                    source = 'qbx_core',
-                    webhook  = 'ooc',
-                    event = 'OOC',
-                    color = 'white',
-                    tags = config.logging.role,
-                    message = ('**%s** (CitizenID: %s | ID: %s) **Message:** %s'):format(GetPlayerName(source), player.PlayerData.citizenid, source, message)
-                })
-            end
-        end
-    end
-end)
-
-lib.addCommand('me', {
-    help = locale('command.me.help'),
-    params = {
-        { name = locale('command.me.params.message.name'), help = locale('command.me.params.message.help'), type = 'string' }
-    }
-}, function(source, args)
-    args[1] = args[locale('command.me.params.message.name')]
-    args[locale('command.me.params.message.name')] = nil
-    if #args < 1 then Notify(source, locale('error.missing_args2'), 'error') return end
-    local msg = table.concat(args, ' '):gsub('[~<].-[>~]', '')
-    local playerState = Player(source).state
-    playerState:set('me', msg, true)
-
-    -- We have to reset the playerState since the state does not get replicated on StateBagHandler if the value is the same as the previous one --
-    playerState:set('me', nil, true)
-end)
-
 lib.addCommand('id', {help = locale('info.check_id')}, function(source)
     Notify(source, 'ID: ' .. source)
 end)
@@ -403,13 +344,37 @@ lib.addCommand('deletechar', {
     help = locale('info.deletechar_command_help'),
     restricted = 'group.admin',
     params = {
-        { name = 'id', help = locale('info.deletechar_command_arg_player_id'), type = 'number' },
+        { name = 'citizenid', help = locale('info.deletechar_command_arg_citizen_id'), type = 'string' },
     }
 }, function(source, args)
-    local player = GetPlayer(args.id)
-    if not player then return end
+    local citizenId = args.citizenid
+    if not citizenId or citizenId == "" then
+        return exports.qbx_core:Notify(source, 'You must provide a valid citizen ID.', 'error')
+    end
 
-    local citizenId = player.PlayerData.citizenid
-    ForceDeleteCharacter(citizenId)
+    -- Validate the citizen ID format
+    if not citizenId:match("^[%w]+$") or #citizenId ~= 8 then
+        return exports.qbx_core:Notify(source, 'Invalid citizen ID format. It must be exactly 8 alphanumeric characters.', 'error')
+    end
+
+    -- Get the Player object using the citizen ID
+    local player = exports.qbx_core:GetOfflinePlayer(citizenId)
+    if not player then
+        return exports.qbx_core:Notify(source, 'No character found with this citizen ID.', 'error')
+    end
+
+    -- Retrieve the character name from PlayerData
+    local characterName = player.PlayerData.charinfo.firstname .. " " .. player.PlayerData.charinfo.lastname
+
+    -- Trigger client event for confirmation
+    TriggerClientEvent('qbx_core:confirmCharacterDeletion', source, characterName, citizenId)
+end)
+
+
+RegisterNetEvent('qbx_core:deleteCharacterConfirmed')
+AddEventHandler('qbx_core:deleteCharacterConfirmed', function(citizenId)
+    -- Proceed to delete the character using the citizen ID
+    exports.qbx_core:DeleteCharacter(citizenId) -- Use the appropriate function to delete the character
+    local source = source -- Get the source of the event
     Notify(source, locale('success.character_deleted_citizenid', citizenId))
 end)

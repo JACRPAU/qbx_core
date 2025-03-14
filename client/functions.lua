@@ -67,3 +67,17 @@ function GetGroups()
 end
 
 exports('GetGroups', GetGroups)
+
+RegisterNetEvent('qbx_core:confirmCharacterDeletion')
+AddEventHandler('qbx_core:confirmCharacterDeletion', function(characterName, citizenId)
+    local confirmation = lib.inputDialog('Confirm Character Deletion', {
+        { type = 'checkbox', label = string.format('Are you sure you want to delete the character "%s" with Citizen ID "%s"?', characterName, citizenId), value = false } -- Checkbox for confirmation
+    })
+
+    if confirmation and confirmation[1] then -- Check if the checkbox is checked
+        -- Notify the server to proceed with deletion
+        TriggerServerEvent('qbx_core:deleteCharacterConfirmed', citizenId)
+    else
+        Notify('Character deletion canceled.', 'inform')
+    end
+end)

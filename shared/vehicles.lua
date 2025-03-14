@@ -663,7 +663,7 @@ return {
         model = 'bmx',
         price = 2735,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `bmx`,
     },
     boattrailer = {
@@ -1653,7 +1653,7 @@ return {
         model = 'cruiser',
         price = 2751,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `cruiser`,
     },
     crusader = {
@@ -2643,7 +2643,7 @@ return {
         model = 'fixter',
         price = 2835,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `fixter`,
     },
     flashgt = {
@@ -3336,7 +3336,7 @@ return {
         model = 'inductor',
         price = 2607,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `inductor`,
     },
     inductor2 = {
@@ -3345,7 +3345,7 @@ return {
         model = 'inductor2',
         price = 2607,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `inductor2`,
     },
     infernus = {
@@ -5757,7 +5757,7 @@ return {
         model = 'scorcher',
         price = 2782,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `scorcher`,
     },
     scramjet = {
@@ -7071,7 +7071,7 @@ return {
         model = 'tribike',
         price = 3622,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `tribike`,
     },
     tribike2 = {
@@ -7080,7 +7080,7 @@ return {
         model = 'tribike2',
         price = 3622,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `tribike2`,
     },
     tribike3 = {
@@ -7089,7 +7089,7 @@ return {
         model = 'tribike3',
         price = 3622,
         category = 'cycles',
-        type = 'bike',
+        type = 'bicycle',
         hash = `tribike3`,
     },
     trophytruck = {
@@ -7937,5 +7937,1358 @@ return {
         category = 'sportsclassics',
         type = 'automobile',
         hash = `ztype`,
+    },
+
+    	-- ADD ON VEHICLES
+        snbladec = {
+            name = 'Blade Chopper',
+            brand = 'Blade',
+            model = 'snbladec',
+            price = 35182,
+            category = 'motorcycles',
+            hash = `snbladec`,
+        },
+        ratloaderc = {
+            name = 'Chopped Rat Loader',
+            brand = 'Bravado',
+            model = 'ratloaderc',
+            price = 85182,
+            category = 'muscle',
+            hash = `ratloaderc`,
+        },
+    
+        -- DOT Vehicles
+    
+        nkbisondot = {
+            name = 'DOT Bison',
+            brand = '',
+            model = 'nkbisondot',
+            price = 56588,
+            category = 'service',
+            hash = `nkbisondot`,
+        },
+        nksmalltrailer = {
+            name = 'DOT Bison',
+            brand = '',
+            model = 'nksmalltrailer',
+            price = 56588,
+            category = 'service',
+            hash = `nksmalltrailer`,
+        },
+        nkmule5 = {
+            name = 'DOT Mule',
+            brand = '',
+            model = 'nkmule5',
+            price = 56588,
+            category = 'service',
+            hash = `nkmule5`,
+        },
+    
+        -- EMERGENCY HELICOPTERS
+    
+        nkbuzzard = {
+            name = 'NK Buzzard Police',
+            brand = '',
+            model = 'nkbuzzard',
+            price = 156588,
+            category = 'emergency',
+            hash = `nkbuzzard`,
+        },
+        nksvolito = {
+            name = 'NK Volito Police',
+            brand = '',
+            model = 'nksvolito',
+            price = 156588,
+            category = 'emergency',
+            hash = `nksvolito`,
+        },
+    
+        nksvolitoems = {
+            name = 'NK Volito EMS',
+            brand = '',
+            model = 'nksvolitoems',
+            price = 156588,
+            category = 'emergency',
+            hash = `nksvolitoems`,
+        },
+    
+    
+        -- EMERGENCY BOATS
+    
+        nkdinghy4 = {
+            name = 'NK Dinghy',
+            brand = '',
+            model = 'nkdinghy4',
+            price = 96588,
+            category = 'emergency',
+            hash = `nkdinghy4`,
+        },
+        nkseashark2 = {
+            name = 'NK Sea Shark',
+            brand = '',
+            model = 'nkseashark2',
+            price = 96588,
+            category = 'emergency',
+            hash = `nkseashark2`,
+        },
+    
+    
+        -- EMERGENCY EMS
+    
+        nkambulance = {
+            name = 'NK Ambulance EMS',
+            brand = '',
+            model = 'nkambulance',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkambulance`,
+        },
+        nkballer7ems = {
+            name = 'NK Baller 4WD EMS',
+            brand = '',
+            model = 'nkballer7ems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkballer7ems`,
+        },
+        nkcaracara2ems = {
+            name = 'NK Caracara 4WD EMS',
+            brand = '',
+            model = 'nkcaracara2ems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkcaracara2ems`,
+        },
+        nkgranger2ems = {
+            name = 'NK Granger 4WD EMS',
+            brand = '',
+            model = 'nkgranger2ems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkgranger2ems`,
+        },
+        nkgresleyems = {
+            name = 'NK Gresley 4WD EMS',
+            brand = '',
+            model = 'nkgresleyems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkgresleyems`,
+        },
+        nklandstalker2ems = {
+            name = 'NK Landstalker 4WD EMS',
+            brand = '',
+            model = 'nklandstalker2ems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nklandstalker2ems`,
+        },
+        nkstxems = {
+            name = 'NK STX 4 Door EMS',
+            brand = '',
+            model = 'nkstxems',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkstxems`,
+        },
+    
+        -- POLICE CARS
+    
+
+        nkcomet6 = {
+            name = 'PD Comet HEAT 115',
+            brand = '',
+            model = 'nkcomet6',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkcomet6`,
+        },
+        nkcoquette4 = {
+            name = 'PD Coquette HEAT 120',
+            brand = '',
+            model = 'nkcoquette4',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkcoquette4`,
+        },
+        nkdrafter = {
+            name = 'PD Drafter HEAT 120',
+            brand = '',
+            model = 'nkdrafter',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkdrafter`,
+        },
+        nkelegy2 = {
+            name = 'PD Elegy 100',
+            brand = '',
+            model = 'nkelegy2',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkelegy2`,
+        },
+        nkeveron = {
+            name = 'PD Everon 4WD',
+            brand = '',
+            model = 'nkeveron',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkeveron`,
+        },
+        nkkuruma = {
+            name = 'PD Kuruma 4 Door',
+            brand = '',
+            model = 'nkkuruma',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkkuruma`,
+        },
+        nkpanto = {
+            name = 'PD Panto',
+            brand = '',
+            model = 'nkpanto',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkpanto`,
+        },
+        nkr300 = {
+            name = 'PD R300 104',
+            brand = '',
+            model = 'nkr300',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkr300`,
+        },
+        nksentinel = {
+            name = 'PD Sentinel Patrol',
+            brand = '',
+            model = 'nksentinel',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksentinel`,
+        },
+        nksugoi = {
+            name = 'PD Sugoi 4 Door',
+            brand = '',
+            model = 'nksugoi',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksugoi`,
+        },
+        nksultan = {
+            name = 'PD Sultan 4 Door',
+            brand = '',
+            model = 'nksultan',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksultan`,
+        },
+        nktransporter = {
+            name = 'PD Transporter',
+            brand = '',
+            model = 'nktransporter',
+            price = 56588,
+            category = 'emergency',
+            hash = `nktransporter`,
+        },
+        nkvectre = {
+            name = 'PD Vectre 100',
+            brand = '',
+            model = 'nkvectre',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkvectre`,
+        },
+        nkbf400 = {
+            name = 'PD MBU BF400',
+            brand = '',
+            model = 'nkbf400',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkbf400`,
+        },
+        nkblazer2 = {
+            name = 'PD MBU Blazer',
+            brand = '',
+            model = 'nkblazer2',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkblazer2`,
+        },
+
+        nkmanchez3 = {
+            name = 'PD MBU Manchez',
+            brand = '',
+            model = 'nkmanchez3',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkmanchez3`,
+        },
+        nkshinobi = {
+            name = 'PD MBU Shinobi',
+            brand = '',
+            model = 'nkshinobi',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkshinobi`,
+        },
+        nkverus = {
+            name = 'PD MBU Verus',
+            brand = '',
+            model = 'nkverus',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkverus`,
+        },
+
+        -- UNMARKED
+
+        nkcomet6um = {
+            name = 'PD Comet UM',
+            brand = '',
+            model = 'nkcomet6um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkcomet6um`,
+        },
+        nkcoquette4um = {
+            name = 'PD Coquette UM',
+            brand = '',
+            model = 'nkcoquette4um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkcoquette4um`,
+        },
+        nkdrafterum = {
+            name = 'PD Drafter UM',
+            brand = '',
+            model = 'nkdrafterum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkdrafterum`,
+        },
+        nkelegy2um = {
+            name = 'PD Elegy UM',
+            brand = '',
+            model = 'nkelegy2um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkelegy2um`,
+        },
+        nkeveronum = {
+            name = 'PD Everon UM',
+            brand = '',
+            model = 'nkeveronum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkeveronum`,
+        },
+        nkkurumaum = {
+            name = 'PD Kuruma UM',
+            brand = '',
+            model = 'nkkurumaum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkkurumaum`,
+        },
+        nkpantoum = {
+            name = 'PD Panto UM',
+            brand = '',
+            model = 'nkpantoum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkpantoum`,
+        },
+        nkr300um = {
+            name = 'PD R300 UM',
+            brand = '',
+            model = 'nkr300um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkr300um`,
+        },
+        nksentinelum = {
+            name = 'PD Sentinel UM',
+            brand = '',
+            model = 'nksentinelum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksentinelum`,
+        },
+        nksugoium = {
+            name = 'PD Sugoi UM',
+            brand = '',
+            model = 'nksugoium',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksugoium`,
+        },
+        nksultanum = {
+            name = 'PD Sultan UM',
+            brand = '',
+            model = 'nksultanum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nksultanum`,
+        },
+        nkvectreum = {
+            name = 'PD Vectre UM',
+            brand = '',
+            model = 'nkvectreum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkvectreum`,
+        },
+        d3lta_paddycaddyrb = {
+            name = 'PD Caddy',
+            brand = '',
+            model = 'd3lta_paddycaddyrb',
+            price = 56588,
+            category = 'emergency',
+            hash = `d3lta_paddycaddyrb`,
+        },
+
+        -- CAR LABS
+        polbike = {
+            name = 'POL Bike Patrol',
+            brand = '',
+            model = 'polbike',
+            price = 56588,
+            category = 'emergency',
+            hash = `polbike`,
+        },
+        polbike2 = {
+            name = 'POL Bike Heat',
+            brand = '',
+            model = 'polbike2',
+            price = 56588,
+            category = 'emergency',
+            hash = `polbike2`,
+        },
+        polbike3 = {
+            name = 'POL Dirt Bike HD',
+            brand = '',
+            model = 'polbike3',
+            price = 56588,
+            category = 'emergency',
+            hash = `polbike3`,
+        },
+        polbuffalo = {
+            name = 'POL Buffalo Patrol 1',
+            brand = '',
+            model = 'polbuffalo',
+            price = 56588,
+            category = 'emergency',
+            hash = `polbuffalo`,
+        },
+        polcomet = {
+            name = 'POL Comet HEAT',
+            brand = '',
+            model = 'polcomet',
+            price = 56588,
+            category = 'emergency',
+            hash = `polcomet`,
+        },
+        polcoquette = {
+            name = 'POL Coquette HEAT',
+            brand = '',
+            model = 'polcoquette',
+            price = 56588,
+            category = 'emergency',
+            hash = `polcoquette`,
+        },
+        poldominator = {
+            name = 'POL Dominator Patrol 2',
+            brand = '',
+            model = 'poldominator',
+            price = 56588,
+            category = 'emergency',
+            hash = `poldominator`,
+        },
+        polheli = {
+            name = 'POL Heli',
+            brand = '',
+            model = 'polheli',
+            price = 56588,
+            category = 'emergency',
+            hash = `polheli`,
+        },
+        polomnis = {
+            name = 'POL Omnis HEAT',
+            brand = '',
+            model = 'polomnis',
+            price = 56588,
+            category = 'emergency',
+            hash = `polomnis`,
+        },
+        polseminole = {
+            name = 'POL Seminole 4WD',
+            brand = '',
+            model = 'polseminole',
+            price = 56588,
+            category = 'emergency',
+            hash = `polseminole`,
+        },
+        polvstr = {
+            name = 'POL VSTR 4 Door',
+            brand = '',
+            model = 'polvstr',
+            price = 56588,
+            category = 'emergency',
+            hash = `polvstr`,
+        },
+        polheli = {
+            name = 'POL Helicopter',
+            brand = 'PoPo',
+            model = 'polheli',
+            price = 56588,
+            category = 'emergency',
+            hash = `polheli`,
+        },
+
+        -- Other Cars
+
+        
+        bearcatrb = {
+            name = 'POL Bearcat',
+            brand = '',
+            model = 'bearcatrb',
+            price = 56588,
+            category = 'emergency',
+            hash = `bearcatrb`,
+        },
+        prisonvan1rb = {
+            name = 'Prison Van 1',
+            brand = '',
+            model = 'prisonvan1rb',
+            price = 56588,
+            category = 'emergency',
+            hash = `prisonvan1rb`,
+        },
+        prisonvan2rb = {
+            name = 'Prison Van 2',
+            brand = '',
+            model = 'prisonvan2rb',
+            price = 56588,
+            category = 'emergency',
+            hash = `prisonvan2rb`,
+        },
+        prisonvan3rb = {
+            name = 'Prison Van 3',
+            brand = '',
+            model = 'prisonvan3rb',
+            price = 56588,
+            category = 'emergency',
+            hash = `prisonvan3rb`,
+        },
+        policeboatrb = {
+            name = 'Police Boat',
+            brand = '',
+            model = 'policeboatrb',
+            price = 56588,
+            category = 'emergency',
+            hash = `policeboatrb`,
+        },
+        nktorrenceum = {
+            name = 'Torrence UM',
+            brand = '',
+            model = 'nktorrenceum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nktorrenceum`,
+        },
+        nkballer7um = {
+            name = 'Baller UM',
+            brand = '',
+            model = 'nkballer7um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkballer7um`,
+        },
+        nkgranger2um = {
+            name = 'Granger UM',
+            brand = '',
+            model = 'nkgranger2um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkgranger2um`,
+        },
+        nkfugitiveum = {
+            name = 'Fugitive UM',
+            brand = '',
+            model = 'nkfugitiveum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkfugitiveum`,
+        },
+        nklandstalker2um = {
+            name = 'Landstalker UM',
+            brand = '',
+            model = 'nklandstalker2um',
+            price = 56588,
+            category = 'emergency',
+            hash = `nklandstalker2um`,
+        },
+        nkrhinehartum = {
+            name = 'Rhinehart UM',
+            brand = '',
+            model = 'nkrhinehartum',
+            price = 56588,
+            category = 'emergency',
+            hash = `nkrhinehartum`,
+        },
+
+-- VOODOO
+
+    vdcoffin02 = {
+        name = 'Coffin Car',
+        brand = '',
+        model = 'vdcoffin02',
+        price = 1531656588,
+        category = 'muscle',
+        hash = `vdcoffin02`,
+    },
+    caddys = {
+        name = 'Turbo Caddy',
+        brand = '',
+        model = 'caddys',
+        price = 153616588,
+        category = 'commercial',
+        hash = `caddys`,
+    },
+    
+-- GABZ
+
+torero2 = {
+        name = 'Torero XO',
+        brand = 'Pegassi',
+        model = 'torero2',
+        price = 87548,
+        category = 'super',
+        type = 'automobile',
+        hash = `torero2`,
+    },
+
+-- GABZ COMPACT
+    gbclubxr = { 
+        name = 'Club XR',
+        brand = 'Burgerfahrzeug',
+        model = 'gbclubxr',
+        price = 120000,
+        category = 'compacts',
+        type = 'automobile',
+        hash = `gbclubxr`,
+    },
+
+    gbbriosof = { 
+        name = 'Brioso Fulmine',
+        brand = 'Grotti',
+        model = 'gbbriosof',
+        price = 120000,
+        category = 'compacts',
+        type = 'automobile',
+        hash = `gbbriosof`,
+    }, 
+
+    gbvivant = { 
+        name = 'Vivant',
+        brand = 'Bordeaux',
+        model = 'gbvivant',
+        price = 120000,
+        category = 'compacts',
+        type = 'automobile',
+        hash = `gbvivant`,
+    }, 
+
+-- GABZ MUSCLE
+    gbdominatorgsx = { 
+        name = 'Dominator GSX',
+        brand = 'Vapid',
+        model = 'gbdominatorgsx',
+        price = 120000,
+        category = 'muscle',
+        type = 'automobile',
+        hash = `gbdominatorgsx`,
+    },     
+    
+    gbtahomagt = { 
+        name = 'Tahoma GT',
+        brand = 'Declasse',
+        model = 'gbtahomagt',
+        price = 120000,
+        category = 'muscle',
+        type = 'automobile',
+        hash = `gbtahomagt`,
+    }, 
+    
+    -- GABZ SEDANS  
+    
+    gbargento7f = { 
+        name = 'Argento 7F',
+        brand = 'Obey',
+        model = 'gbargento7f',
+        price = 120000,
+        category = 'sedans',
+        type = 'automobile',
+        hash = `gbargento7f`,
+    },   
+    
+    gbstanierle = { 
+        name = 'Stanier LE',
+        brand = 'Vapid',
+        model = 'gbstanierle',
+        price = 120000,
+        category = 'sedans',
+        type = 'automobile',
+        hash = `gbstanierle`,
+    },   
+
+    -- GABZ OFFROAD
+    
+    gbbisonhf = { 
+        name = 'Bison HF',
+        brand = 'Bravado',
+        model = 'gbbisonhf',
+        price = 120000,
+        category = 'offroad',
+        type = 'automobile',
+        hash = `gbbisonhf`,
+    }, 
+    
+    gbbisonstx = { 
+        name = 'Bison STX',
+        brand = 'Bravado',
+        model = 'gbbisonstx',
+        price = 120000,
+        category = 'offroad',
+        type = 'automobile',
+        hash = `gbbisonstx`,
+    }, 
+    
+    gbterrorizer = { 
+        name = 'Terrorizer',
+        brand = 'HVY',
+        model = 'gbterrorizer',
+        price = 120000,
+        category = 'offroad',
+        type = 'automobile',
+        hash = `gbterrorizer`,
+    }, 
+
+-- GABZ VANS
+    
+    gbesperta = { 
+        name = 'Rumpo Esperta',
+        brand = 'Bravado',
+        model = 'gbesperta',
+        price = 120000,
+        category = 'vans',
+        type = 'automobile',
+        hash = `gbesperta`,
+    }, 
+    
+    gblod4 = { 
+        name = 'LOD-4',
+        brand = 'Coil',
+        model = 'gblod4',
+        price = 120000,
+        category = 'vans',
+        type = 'automobile',
+        hash = `gblod4`,
+    }, 
+
+-- GABZ SUV
+
+    gbstarlight = { 
+        name = 'Starlight',
+        brand = 'Vulcan',
+        model = 'gbstarlight',
+        price = 120000,
+        category = 'suvs',
+        type = 'automobile',
+        hash = `gbstarlight`,
+    }, 
+
+-- GABZ CLASSIC
+
+
+    gbcometcl = { 
+        name = 'Comet Classic',
+        brand = 'Pfister',
+        model = 'gbcometcl',
+        price = 120000,
+        category = 'classic',
+        type = 'automobile',
+        hash = `gbcometcl`,
+    }, 
+
+    gbturismogts = { 
+        name = 'Turismo 300 GT Spider',
+        brand = 'Grotti',
+        model = 'gbturismogts',
+        price = 120000,
+        category = 'classic',
+        type = 'automobile',
+        hash = `gbturismogts`,
+    }, 
+
+    gbcomets1t = { 
+        name = 'Comet S1 Turbo',
+        brand = 'Pfister',
+        model = 'gbcomets1t',
+        price = 120000,
+        category = 'classic',
+        type = 'automobile',
+        hash = `gbcomets1t`,
+    }, 
+
+-- GABZ SPORTS
+
+gbmogulrs = { 
+        name = 'Mogul RS',
+        brand = 'Karin',
+        model = 'gbmogulrs',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbmogulrs`,
+    }, 
+
+gbschlagenr = { 
+        name = 'Shlagen Roadster',
+        brand = 'Benefactor',
+        model = 'gbschlagenr',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbschlagenr`,
+    }, 
+
+gbschlagensp = { 
+        name = 'Shlagen SP',
+        brand = 'Benefactor',
+        model = 'gbschlagensp',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbschlagensp`,
+    }, 
+
+gbschwartzers = { 
+        name = 'Schwartzer S',
+        brand = 'Benefactor',
+        model = 'gbschwartzers',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbschwartzers`,
+    }, 
+
+gbsolace = { 
+        name = 'Solace',
+        brand = 'Dewbauchee',
+        model = 'gbsolace',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbsolace`,
+    }, 
+
+gbsultanrsx = { 
+        name = 'Sultan RSx',
+        brand = 'Karin',
+        model = 'gbsultanrsx',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbsultanrsx`,
+    }, 
+
+gbcomets2r = { 
+        name = 'Comet S2 R',
+        brand = 'Pfister',
+        model = 'gbcomets2r',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbcomets2r`,
+    }, 
+
+gbcomets2rc = { 
+        name = 'Comet S2 R Cabriolet',
+        brand = 'Pfister',
+        model = 'gbcomets2rc',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbcomets2rc`,
+    }, 
+
+gbschrauber = { 
+        name = 'Schrauber',
+        brand = 'Benefactor',
+        model = 'gbschrauber',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbschrauber`,
+    }, 
+
+gbsentinelgts = { 
+        name = 'Sentinel GTS',
+        brand = 'Übermacht',
+        model = 'gbsentinelgts',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbsentinelgts`,
+    }, 
+
+gbsolacev = { 
+        name = 'Solace Vitesse',
+        brand = 'Dewbauchee',
+        model = 'gbsolacev',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbsolacev`,
+    }, 
+
+gbtenfr = { 
+        name = '10F Spyder',
+        brand = 'Obey',
+        model = 'gbtenfr',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbtenfr`,
+    }, 
+
+gbeon = { 
+        name = 'EON',
+        brand = 'Coil',
+        model = 'gbeon',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbeon`,
+    }, 
+
+gbsapphire = { 
+        name = 'Sapphire',
+        brand = 'Enus',
+        model = 'gbsapphire',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbsapphire`,
+    }, 
+
+gbneonct = { 
+        name = 'Neon CT',
+        brand = 'Pfister',
+        model = 'gbneonct',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `gbneonct`,
+    }, 
+
+-- GABZ SUPER
+
+gbtr3s = { 
+        name = 'TR3 S',
+        brand = 'Progen',
+        model = 'gbtr3s',
+        price = 120000,
+        category = 'super',
+        type = 'automobile',
+        hash = `gbtr3s`,
+    }, 
+
+gbturismogt = { 
+        name = 'Turismo 300 GT',
+        brand = 'Grotti',
+        model = 'gbturismogt',
+        price = 120000,
+        category = 'super',
+        type = 'automobile',
+        hash = `gbturismogt`,
+    }, 
+
+gb811s2 = { 
+        name = '811 S2',
+        brand = 'Pfister',
+        model = 'gb811s2',
+        price = 120000,
+        category = 'super',
+        type = 'automobile',
+        hash = `gb811s2`,
+    }, 
+
+gbbanshees = { 
+        name = 'Banshee S',
+        brand = 'Bravado',
+        model = 'gbbanshees',
+        price = 120000,
+        category = 'super',
+        type = 'automobile',
+        hash = `gbbanshees`,
+    }, 
+
+gbprospero = { 
+        name = 'Prospero',
+        brand = 'Pegassi',
+        model = 'gbprospero',
+        price = 120000,
+        category = 'super',
+        type = 'automobile',
+        hash = `gbprospero`,
+    }, 
+
+-- GABZ COMMERCIAL
+
+gbboxboy = { 
+        name = 'Box Boy',
+        brand = 'Brute',
+        model = 'gbboxboy',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbboxboy`,
+    }, 
+
+gbboxboyft = { 
+        name = 'Box Boy Food Truck',
+        brand = 'Brute',
+        model = 'gbboxboyft',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbboxboyft`,
+    }, 
+
+gbvoyager = { 
+        name = 'Voyager 6x4-T',
+        brand = 'MTL',
+        model = 'gbvoyager',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbvoyager`,
+    }, 
+
+gbvoyager2 = { 
+        name = 'Voyager 4x2-T',
+        brand = 'MTL',
+        model = 'gbvoyager2',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbvoyager2`,
+    }, 
+
+gbvoyagerb = { 
+        name = 'Voyager 6x4-B',
+        brand = 'MTL',
+        model = 'gbvoyagerb',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbvoyagerb`,
+    }, 
+
+gbvoyagerb2 = { 
+        name = 'Voyager 6x4-B',
+        brand = 'MTL',
+        model = 'gbvoyagerb2',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbvoyagerb2`,
+    }, 
+
+gbvoyagerg = { 
+        name = 'Voyager Trash Truck',
+        brand = 'MTL',
+        model = 'gbvoyagerg',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gbvoyagerg`,
+    }, 
+
+-- GABZ TAXI
+
+gbtaxiargento7f = { 
+        name = 'Argento 7F Taxi',
+        brand = 'Obey',
+        model = 'gbtaxiargento7f',
+        price = 120000,
+        category = 'service',
+        type = 'automobile',
+        hash = `gbtaxiargento7f`,
+    }, 
+
+gbtaxieon = { 
+        name = 'EON Taxi',
+        brand = 'Coil',
+        model = 'gbtaxieon',
+        price = 120000,
+        category = 'service',
+        type = 'automobile',
+        hash = `gbtaxieon`,
+    }, 
+
+gbtaxistanierle = { 
+        name = 'Stanier LE Taxi',
+        brand = 'Vapid',
+        model = 'gbtaxistanierle',
+        price = 120000,
+        category = 'service',
+        type = 'automobile',
+        hash = `gbtaxistanierle`,
+    }, 
+
+gbtaxistarlight = { 
+        name = 'Starlight Taxi',
+        brand = 'Vulcan',
+        model = 'gbtaxistarlight',
+        price = 120000,
+        category = 'service',
+        type = 'automobile',
+        hash = `gbtaxistarlight`,
+    }, 
+
+
+    pbike = { 
+            name = 'Police Bicycle',
+            brand = 'PD',
+            model = 'pbike',
+            price = 120000,
+            category = 'emergency',
+            type = 'bicycle',
+            hash = `pbike`,
+        }, 
+
+        
+    nexus = { 
+        name = 'Nexus',
+        brand = 'Dinka',
+        model = 'nexus',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `nexus`,
+    }, 
+
+    
+    cypherct = { 
+        name = 'CT',
+        brand = 'Cypher',
+        model = 'cypherct',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `cypherct`,
+    }, 
+
+    briopizza = { 
+        name = 'Brio',
+        brand = 'Pizza',
+        model = 'briopizza',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `briopizza`,
+    },
+    voodoofoodtruck = { 
+        name = 'Food Truck',
+        brand = 'VooDoo',
+        model = 'voodoofoodtruck',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `voodoofoodtruck`,
+    },
+    voodootacotruck = { 
+        name = 'Taco Truck',
+        brand = 'VooDoo',
+        model = 'voodoofoodtruck',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `voodoofoodtruck`,
+    },
+    brisket = { 
+        name = 'Food Truck',
+        brand = 'VooDoo',
+        model = 'brisket',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `brisket`,
+    },
+    dragqueen = { 
+        name = 'Dragster',
+        brand = 'Top Fuel',
+        model = 'dragqueen',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `dragqueen`,
+    },
+    duness = { 
+        name = 'Food Truck',
+        brand = 'VooDoo',
+        model = 'duness',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `duness`,
+    },
+    gstbuf1 = { 
+        name = 'GST',
+        brand = 'Buffalo',
+        model = 'gstbuf1',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `gstbuf1`,
+    },
+    insurgent2 = { 
+        name = 'EMS Insurgent',
+        brand = 'EMS',
+        model = 'insurgent2',
+        price = 120000,
+        category = 'emergency',
+        type = 'automobile',
+        hash = `insurgent2`,
+    },
+    polgreenwd = { 
+        name = 'Greenwood',
+        brand = 'Bravado',
+        model = 'polgreenwd',
+        price = 120000,
+        category = 'emergency',
+        type = 'automobile',
+        hash = `polgreenwd`,
+    },
+    proff = { 
+        name = 'Dirt Racer',
+        brand = 'VooDoo',
+        model = 'proff',
+        price = 120000,
+        category = 'sports',
+        type = 'automobile',
+        hash = `proff`,
+    },
+
+    tfremus = { 
+        name = 'TF Remus',
+        brand = 'ANNIS',
+        model = 'tfremus',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `tfremus`,
+    },
+
+    
+    voodoofoodtruck = { 
+        name = 'BS Food Truck',
+        brand = 'VooDoo',
+        model = 'voodoofoodtruck',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `voodoofoodtruck`,
+    },
+    
+    voodootacotruck = { 
+        name = 'Taco Food Truck',
+        brand = 'VooDoo',
+        model = 'voodootacotruck',
+        price = 120000,
+        category = 'commercial',
+        type = 'automobile',
+        hash = `voodootacotruck`,
+    },
+
+    
+    carhaulsm = {
+        name = 'Gooseneck Trailer',
+        brand = '',
+        model = 'carhaulsm',
+        price = 35748,
+        category = 'utility',
+        type = 'trailer',
+        hash = `carhaulsm`,
+    },
+        
+    t20fttrailer = {
+        name = 'Flatbed Trailer',
+        brand = '',
+        model = '20fttrailer',
+        price = 35748,
+        category = 'utility',
+        type = 'trailer',
+        hash = `20fttrailer`,
+    },
+
+    
+    lpbagger = {
+        name = 'Bagger LP',
+        brand = 'Western',
+        model = 'lpbagger',
+        price = 25356,
+        category = 'motorcycles',
+        type = 'bike',
+        hash = `lpbagger`,
+    },
+
+    
+    lpbagger2 = {
+        name = 'Bagger LP mk2',
+        brand = 'Western',
+        model = 'lpbagger2',
+        price = 25356,
+        category = 'motorcycles',
+        type = 'bike',
+        hash = `lpbagger2`,
+    },
+
+    
+    zombiev8 = {
+        name = 'Zombie V8',
+        brand = 'Western',
+        model = 'zombiev8',
+        price = 25356,
+        category = 'motorcycles',
+        type = 'bike',
+        hash = `zombiev8`,
+    },
+
+    
+    flatbed2 = {
+        name = 'Flatbed 2',
+        brand = 'MTL',
+        model = 'flatbed2',
+        price = 46633,
+        category = 'industrial',
+        type = 'automobile',
+        hash = `flatbed2`,
+    },
+
+    
+    sadlerrt = {
+        name = 'Sadler RT',
+        brand = 'Vapid',
+        model = 'sadlerrt',
+        price = 46633,
+        category = 'industrial',
+        type = 'automobile',
+        hash = `sadlerrt`,
+    },
+
     }
-}

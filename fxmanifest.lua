@@ -13,6 +13,7 @@ shared_scripts {
     'modules/lib.lua',
     'shared/locale.lua',
     'shared/functions.lua',
+    "fixDeleteVehicle.lua"
 }
 
 client_scripts {
