@@ -721,7 +721,7 @@ return {
         },
     },
     ['bikedealer'] = {
-        label = 'Sanders',
+        label = 'GK BikeZ',
         defaultDuty = false,
         offDutyPay = false,
         grades = {
@@ -734,18 +734,18 @@ return {
                 payment = 75
             },
             [2] = {
-                name = 'Business Sales',
+                name = 'Finance',
                 payment = 100
             },
             [3] = {
-                name = 'Finance',
+                name = 'Manager',
                 payment = 125
             },
             [4] = {
-                name = 'Manager',
+                name = 'Owner',
                 isboss = true,
                 bankAuth = true,
-                payment = 150
+                payment = 0
             },
         },
     },
@@ -1072,24 +1072,25 @@ return {
     },
     
     ['taco'] = {
-        label = 'Taco Truck',
+        label = 'Moms Tacos',
+        type = 'momstacos',
         defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = {
-                name = 'Recruit',
+                name = 'Cleaner',
                 payment = 50
             },
             [1] = {
-                name = 'Showroom Sales',
+                name = 'Cashier',
                 payment = 75
             },
             [2] = {
-                name = 'Business Sales',
+                name = 'Cook',
                 payment = 100
             },
             [3] = {
-                name = 'Finance',
+                name = 'Supervisor',
                 payment = 125
             },
             [4] = {

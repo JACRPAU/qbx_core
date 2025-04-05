@@ -152,7 +152,7 @@ local function randomPed()
     local ped = randomPeds[math.random(1, #randomPeds)]
     lib.requestModel(ped.model, config.loadingModelsTimeout)
     SetPlayerModel(cache.playerId, ped.model)
-    pcall(function() exports['illenium-appearance']:setPedAppearance(PlayerPedId(), ped) end)
+    exports.bl_appearance:SetPedModel(ped, ped.model)
     SetModelAsNoLongerNeeded(ped.model)
 end
 
@@ -160,12 +160,9 @@ end
 local function previewPed(citizenId)
     if not citizenId then randomPed() return end
 
-    local clothing, model = lib.callback.await('qbx_core:server:getPreviewPedData', false, citizenId)
-    if model and clothing then
-        lib.requestModel(model, config.loadingModelsTimeout)
-        SetPlayerModel(cache.playerId, model)
-        pcall(function() exports['illenium-appearance']:setPedAppearance(PlayerPedId(), json.decode(clothing)) end)
-        SetModelAsNoLongerNeeded(model)
+    local appearance = exports.bl_appearance:GetPlayerPedAppearance(citizenId)
+    if appearance and appearance.model then
+        pcall(function() exports.bl_appearance:SetPlayerPedAppearance(appearance) end)
     else
         randomPed()
     end
